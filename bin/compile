@@ -17,7 +17,7 @@ function fetch_package() {
     local location="$3"
 
     mkdir -p "$location"
-
+    echo "http://${S3_BUCKET}.s3.amazonaws.com/package/${engine}-${version}.tgz"
     local package="http://${S3_BUCKET}.s3.amazonaws.com/package/${engine}-${version}.tgz"
 
     curl "$package" -L -s -o - | tar xzf - -C "$location"
