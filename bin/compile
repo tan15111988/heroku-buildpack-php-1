@@ -153,9 +153,9 @@ if [ "$NGINX_VERSION" = "default" ]; then
     NGINX_VERSION="$DEFAULT_NGINX"
 fi
 
-#if [ "$PHP_INCLUDES" = "" ]; then
-#    PHP_INCLUDES="etc/php.ini"
-#fi
+if [ "$PHP_INCLUDES" = "" ]; then
+    PHP_INCLUDES="etc/php.ini"
+fi
 
 if [ "$NGINX_INCLUDES" = "" ]; then
     NGINX_INCLUDES="etc/nginx.conf"
