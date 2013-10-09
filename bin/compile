@@ -157,9 +157,9 @@ fi
 #    PHP_INCLUDES="etc/php.ini"
 #fi
 
-#if [ "$NGINX_INCLUDES" = "" ]; then
-#    NGINX_INCLUDES="etc/nginx.conf"
-#fi
+if [ "$NGINX_INCLUDES" = "" ]; then
+    NGINX_INCLUDES="etc/nginx.conf"
+fi
 # Look for ".*" versions, match them against all available versions
 # and select the latest version which was found.
 if echo "$PHP_VERSION" | grep '\*' &>/dev/null; then
