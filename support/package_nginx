@@ -27,7 +27,8 @@ fi
 zlib_version="$NGINX_ZLIB_VERSION"
 pcre_version="$NGINX_PCRE_VERSION"
 
-tempdir="$( mktemp -t nginx_xxxx )"
+#tempdir="$( mktemp -t nginx_xxxx )"
+tempdir="/tmp/nginx"
 rm -rf $tempdir
 mkdir -p $tempdir
 cd $tempdir
