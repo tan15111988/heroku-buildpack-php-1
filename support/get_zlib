@@ -5,7 +5,8 @@ basedir="$( cd -P "$( dirname "$0" )" && pwd )"
 
 source "$basedir/../conf/buildpack.conf"
 
-tempdir="$( mktemp -t nginx_xxxx )"
+#tempdir="$( mktemp -t nginx_xxxx )"
+tempdir="/tmp"
 rm -rf $tempdir
 mkdir -p $tempdir
 cd $tempdir
